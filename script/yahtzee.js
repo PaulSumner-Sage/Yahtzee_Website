@@ -172,11 +172,6 @@ function print_scores() {
     scoreboard_Output += "<p> Set of fours: " + sets_score[3] + "</p>";
     scoreboard_Output += "<p> Set of fives: " + sets_score[4] + "</p>";
     scoreboard_Output += "<p> Set of sixes: " + sets_score[5] + "</p>";
-    if (upperScore >= 98) {
-        scoreboard_Output += "<h4> Total Upper Score: : " + upperScore + "&nbsp" + "</h4><h5>(With a bonus of 35!)</h5>";
-    } else {
-        scoreboard_Output += "<h4> Total Upper Score: : " + upperScore + "</h4>";
-    }
     scoreboard_Output += "</div>"
     scoreboard_Output += "<div class=\"col-right\">"
     scoreboard_Output += "<h3>Lower Scores</h3>";
@@ -187,12 +182,17 @@ function print_scores() {
     scoreboard_Output += "<p>Long Straight: " + long_straight_score + "</p>";
     scoreboard_Output += "<p>Yahtzee: " + yahtzee_score + "</p>";
     scoreboard_Output += "<p>Chance: " + chance_score + "</p>";
-    scoreboard_Output += "<h4> Total Lower Score: : " + lowerScore + "</h4>";
     scoreboard_Output += "</div>"
     
     SCOREBOARD.innerHTML = scoreboard_Output;
     
-    scores_Output = "<h3>The Total Score is: " + (upperScore+lowerScore) + "</h3>";
+    if (upperScore >= 98) {
+        scores_Output = "<h4> Total Upper Score: : " + upperScore + "&nbsp" + "</h4><h5>(With a bonus of 35!)</h5>";
+    } else {
+        scores_Output += "<h4> Total Upper Score: : " + upperScore + "</h4>";
+    }
+    scores_Output += "</br><h4> Total Lower Score: : " + lowerScore + "</h4>";
+    scores_Output += "<h3>The Total Score is: " + (upperScore+lowerScore) + "</h3>";
     
     TOTALSCORES.innerHTML = scores_Output;
 }

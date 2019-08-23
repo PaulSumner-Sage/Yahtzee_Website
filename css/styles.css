@@ -37,6 +37,11 @@ h3 {
 }
 h4, h5 {
   display: inline-block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0;
+  padding-right 0;
+  margin: 0;
 }
 .content-wrap {
     max-width: 950px;
@@ -80,6 +85,10 @@ footer p {
     color: #D4D6B9;
     margin: 0;
     padding: 1rem;
+}
+.totals {
+    background: #5D6773;
+    color: #D1CAA1;
 }
 
 /* Media Queries
