@@ -1,0 +1,124 @@
+/*
+#32213A Dark Purple
+#383B53 Charcoal
+#5D6773 Cadet (Light Grey)
+#D4D6B9 Pastel Gray (pale Yellow)
+#D1CAA1 Dark Vanilla
+*/
+
+/* 
+font-family: 'Raleway', sans-serif;
+font-family: 'Courgette', cursive; 
+*/
+
+/* Global Styles
+-------------------------------*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+h1 {
+    margin-top: 0;
+    /* padding: 1rem; */
+}
+h2 {
+    /* padding: 1rem; */
+    margin-bottom: 0;
+}
+h3 {
+    font-weight: 700;
+}
+h4, h5 {
+  display: inline-block;
+}
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    overflow: hidden;
+}
+
+/* Header and Footer
+-------------------------------*/
+header, footer {
+    font-family: 'Courgette', cursive;
+    background: #32213A;
+    color: #D1CAA1;
+    padding-bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    padding: 3rem;
+    text-align: center;
+}
+
+/* Dice Input Area
+-------------------------------*/
+.diceInput {
+    background: #5D6773;
+    color: #D1CAA1;
+    margin: 0;
+    padding-top: 0;
+}
+.diceInput p {
+    margin: 0;
+    padding: 1rem;
+}
+
+/* Scoreboard
+-------------------------------*/
+.scoring {
+    background: #383B53;
+    color: #D4D6B9;
+    margin: 0;
+    padding: 1rem;
+}
+
+/* Media Queries
+-------------------------------*/
+
+@media (min-width: 900px) {
+    .col-narrow {
+        width: 30%;
+        float: left;
+    }   
+    .col-wide {
+        width: 70%;
+        float: left;
+        padding-left: 20px;
+    }
+    .col-left {
+        padding-left: 5%;
+        width: 45%;
+        float: left;
+    }   
+    .col-right{
+        width: 50%;
+        float: left;
+        padding-right: 5%;
+    }   
+    .totals {
+        padding-left: 5%;
+        padding-top: 5%;
+        width: 45%;
+        clear: both;
+    }
+}
+
+@media (max-width: 899px){
+    header {
+      text-align: center;
+    }
+    .dice-img {
+        max-width: 25rem;
+        /* width: 50rem; */
+    }
+}
