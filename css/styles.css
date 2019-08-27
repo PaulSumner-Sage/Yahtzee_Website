@@ -23,13 +23,12 @@ html {
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
+    background-color: #32213A;
 }
 h1 {
     margin-top: 0;
-    /* padding: 1rem; */
 }
 h2 {
-    /* padding: 1rem; */
     margin-bottom: 0;
 }
 h3 {
@@ -73,6 +72,28 @@ footer p {
     margin: 0;
     padding-top: 0;
 }
+.diceInput button {
+    margin: 5px;
+    padding: 0.5rem;
+    background-color: #D4D6B9;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid #D1CAA1;
+    /* -webkit-transition-duration: 0.4s; /* Safari */
+    /* transition-duration: 0.4s; */ */
+    box-shadow: 0 9px #999;
+}
+
+button:hover {
+    background-color: rgb(156, 158, 132); /* Green */
+    color: white;
+}
+
+button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
 .diceInput p {
     margin: 0;
     padding: 1rem;
@@ -84,11 +105,15 @@ footer p {
     background: #383B53;
     color: #D4D6B9;
     margin: 0;
-    padding: 1rem;
+    padding: 0;
 }
 .totals {
     background: #5D6773;
     color: #D1CAA1;
+    padding: 1rem;
+    padding-left: 5%;
+    width: 100%;
+    clear: both;
 }
 
 /* Media Queries
@@ -113,13 +138,7 @@ footer p {
         width: 50%;
         float: left;
         padding-right: 5%;
-    }   
-    .totals {
-        padding-left: 5%;
-        padding-top: 5%;
-        width: 45%;
-        clear: both;
-    }
+    } 
 }
 
 @media (max-width: 899px){
@@ -130,4 +149,12 @@ footer p {
         max-width: 25rem;
         /* width: 50rem; */
     }
+    .col-left {
+        padding-top: 1rem;
+        padding-left: 5%;
+    }   
+    .col-right{
+        padding-left: 5%;
+        padding-bottom: 1rem;
+    } 
 }
