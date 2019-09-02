@@ -1,18 +1,15 @@
-/*
-#32213A Dark Purple
-#383B53 Charcoal
-#5D6773 Cadet (Light Grey)
-#D4D6B9 Pastel Gray (pale Yellow)
-#D1CAA1 Dark Vanilla
-*/
-
 /* 
-font-family: 'Raleway', sans-serif;
-font-family: 'Courgette', cursive; 
+ #32213A Dark Purple 
+ #383B53 Charcoal 
+ #5D6773 Cadet (Light Grey) 
+ #D4D6B9 Pastel Gray (pale Yellow) 
+ #D1CAA1 Dark Vanilla
+
+ font-family: 'Raleway', sans-serif;
+ font-family: 'Courgette', cursive;
 */
 
-/* Global Styles
--------------------------------*/
+/* Global Styles -------------------------------*/
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
     box-sizing: border-box;
@@ -35,12 +32,9 @@ h3 {
     font-weight: 700;
 }
 h4, h5 {
-  display: inline-block;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0;
-  padding-right: 0;
-  margin: 0;
+    display: inline-block;
+    padding: 0.5rem 0;
+    margin: 0;
 }
 .content-wrap {
     max-width: 950px;
@@ -48,24 +42,19 @@ h4, h5 {
     padding: 30px 20px;
     overflow: hidden;
 }
-
-/* Header and Footer
--------------------------------*/
+/* Header and Footer -------------------------------*/
 header, footer {
     font-family: 'Courgette', cursive;
     background: #32213A;
     color: #D1CAA1;
     padding-bottom: 0;
 }
-
 footer p {
     margin: 0;
     padding: 3rem;
     text-align: center;
 }
-
-/* Dice Input Area
--------------------------------*/
+/* Dice Input Area -------------------------------*/
 .diceInput {
     background: #5D6773;
     color: #D1CAA1;
@@ -79,28 +68,21 @@ footer p {
     font-size: 1.5rem;
     border-radius: 0.5rem;
     border: 2px solid #D1CAA1;
-    /* -webkit-transition-duration: 0.4s; /* Safari */
-    /* transition-duration: 0.4s; */
     box-shadow: 0 9px #999;
 }
-
 button:hover {
-    background-color: rgb(156, 158, 132); /* Green */
+    background-color: rgb(156, 158, 132);
     color: white;
 }
-
 button:active {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
-  }
-
+}
 .diceInput p {
     margin: 0;
     padding: 1rem;
 }
-
-/* Scoreboard
--------------------------------*/
+/* Scoreboard -------------------------------*/
 .scoring {
     background: #383B53;
     color: #D4D6B9;
@@ -115,46 +97,41 @@ button:active {
     width: 100%;
     clear: both;
 }
-
-/* Media Queries
--------------------------------*/
-
+/* Media Queries -------------------------------*/
 @media (min-width: 900px) {
     .col-narrow {
         width: 30%;
         float: left;
-    }   
+   }
     .col-wide {
         width: 70%;
         float: left;
         padding-left: 20px;
-    }
+   }
     .col-left {
         padding-left: 5%;
         width: 45%;
         float: left;
-    }   
+   }
     .col-right{
         width: 50%;
         float: left;
         padding-right: 5%;
-    } 
+   }
 }
-
 @media (max-width: 899px){
     header {
-      text-align: center;
-    }
+        text-align: center;
+   }
     .dice-img {
         max-width: 25rem;
-        /* width: 50rem; */
-    }
+   }
     .col-left {
         padding-top: 1rem;
         padding-left: 5%;
-    }   
+   }
     .col-right{
         padding-left: 5%;
         padding-bottom: 1rem;
-    } 
+   }
 }

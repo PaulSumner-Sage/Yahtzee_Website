@@ -210,7 +210,7 @@ function Scoreboard(sets, three_of_a_kind, four_of_a_kind, full_house, short_str
 function print_current_dice() {
     scoreboard.zero_scores();
 
-    values_Output = "<div class=\"col-left\">";
+    var values_Output = "<div class=\"col-left\">";
     values_Output += "<h3>Upper Dice Rolls:</h3>";
     values_Output += "<p> Set of ones: " + scoreboard.sets[0] + "</p>";
     values_Output += "<p> Set of twos: " + scoreboard.sets[1] + "</p>";
@@ -234,10 +234,11 @@ function print_current_dice() {
     DICEVALUES.innerHTML = values_Output;
 }
 
+// eslint-disable-next-line no-unused-vars
 function print_scores() {
     scoreboard.calculate_scores();
 
-    scoreboard_Output = "<div class=\"col-left\">"
+    var scoreboard_Output = "<div class=\"col-left\">"
     scoreboard_Output += "<h3>Upper Scores</h3>" ;
     scoreboard_Output += "<p> Set of ones: " + scoreboard.sets_score[0] + "</p>";
     scoreboard_Output += "<p> Set of twos: " + scoreboard.sets_score[1] + "</p>";
@@ -259,7 +260,7 @@ function print_scores() {
     
     SCOREBOARD.innerHTML = scoreboard_Output;
     
-    scores_Output = "";
+    var scores_Output = "";
     if (scoreboard.upperScore >= 98) {
         scores_Output = "<h4> Total Upper Score: : " + scoreboard.upperScore + "&nbsp" + "</h4><h5>(With a bonus of 35!)</h5>";
     } else {
@@ -286,6 +287,7 @@ function getRandomDieSet() {
 
 
 
+// eslint-disable-next-line no-unused-vars
 function generate_scores() {
     scoreboard.three_of_a_kind = getRandomDieSet();
     scoreboard.four_of_a_kind = getRandomDieSet();
